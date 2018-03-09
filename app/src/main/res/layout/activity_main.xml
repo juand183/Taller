@@ -1,18 +1,180 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<android.support.design.widget.CoordinatorLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.example.lenovo.taller.MainActivity">
+
+
+
+<ScrollView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.lenovo.taller.MainActivity">
+    android:layout_weight="0.3"
+    android:background="#EDEDED">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical"
+        android:background="@drawable/borde"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:elevation="10dp">
 
-</android.support.constraint.ConstraintLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@android:color/white"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/postre1"
+                android:scaleType="centerCrop"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/colorWhite"
+                android:elevation="10dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/id_tv_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/checkedgreen"
+                    />
+                <TextView
+                    android:id="@+id/id_tv_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="THE OXFORD"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/id_tv_image"/>
+
+                <FrameLayout
+                    android:id="@+id/id_tv_border"
+                    android:layout_marginLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_below="@id/id_tv_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:layout_width="250dp"
+                        android:layout_height="10dp"
+                        android:background="@drawable/borde1"/>
+
+                </FrameLayout>
+
+                <ImageView
+                    android:id="@+id/id_tv_image1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/id_tv_border"
+                    android:layout_alignLeft="@id/id_tv_border"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/staryellow"
+
+                    />
+                <ImageView
+                    android:id="@+id/id_tv_image2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/id_tv_image1"
+                    android:layout_alignBottom="@id/id_tv_image1"
+                    android:src="@drawable/staryellow"
+
+                    />
+                <ImageView
+                    android:id="@+id/id_tv_image3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/id_tv_image2"
+                    android:layout_alignBottom="@id/id_tv_image2"
+                    android:src="@drawable/staryellow"
+
+                    />
+                <ImageView
+                    android:id="@+id/id_tv_image4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/id_tv_image3"
+                    android:layout_alignBottom="@id/id_tv_image3"
+                    android:src="@drawable/staryellow"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/id_tv_image5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/id_tv_image4"
+                    android:layout_alignBottom="@id/id_tv_image4"
+                    android:src="@drawable/staryellow"
+
+                    />
+
+
+                <ImageView
+                    android:id="@+id/id_tv_image6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/id_tv_border"
+                    android:layout_alignRight="@id/id_tv_border"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/staryellow"
+                    />
+                <ImageView
+                    android:id="@+id/id_tv_image7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/id_tv_image6"
+                    android:layout_alignBottom="@id/id_tv_image6"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/staryellow"
+                    />
+
+                <ImageView
+                    android:id="@+id/id_tv_image8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/id_tv_image7"
+                    android:layout_alignBottom="@id/id_tv_image7"
+                    android:paddingTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/staryellow"
+                    />
+
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</ScrollView>
+<android.support.design.widget.FloatingActionButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|end"
+    android:src="@drawable/plus"
+    />
+</android.support.design.widget.CoordinatorLayout>
