@@ -1,180 +1,828 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout  xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-tools:context="com.example.lenovo.taller.MainActivity">
-
-
-
-<ScrollView
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_weight="0.3"
-    android:background="#EDEDED">
+    tools:context="com.example.lenovo.taller.MainActivity">
 
-    <LinearLayout
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="@drawable/borde"
-        android:padding="10dp"
-        android:layout_margin="5dp"
-        android:elevation="10dp">
+        android:layout_height="match_parent"
+        android:layout_weight="0.3"
+        android:background="#EDEDED">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
             android:background="@android:color/white"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginBottom="1dp">
+            android:orientation="vertical"
+            android:padding="10dp">
 
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/postre1"
-                android:scaleType="centerCrop"
-                app:civ_border_width="2dp"
-                app:civ_border_color="@color/colorWhite"
-                android:elevation="10dp" />
-
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_weight="1">
+                android:layout_height="match_parent"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/borde"
+                android:elevation="10dp"
+                android:orientation="horizontal"
+                android:padding="10dp">
 
-                <ImageView
-                    android:id="@+id/id_tv_image"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/checkedgreen"
-                    />
-                <TextView
-                    android:id="@+id/id_tv_text"
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:elevation="20dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/postre1"
+                    app:civ_border_color="@color/colorWhite"
+                    app:civ_border_width="2dp" />
+
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="THE OXFORD"
-                    android:textSize="15sp"
-                    android:textStyle="bold"
-                    android:layout_marginLeft="5dp"
-                    android:layout_toRightOf="@id/id_tv_image"/>
-
-                <FrameLayout
-                    android:id="@+id/id_tv_border"
                     android:layout_marginLeft="10dp"
-                    android:paddingTop="10dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_below="@id/id_tv_text"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/id_tv_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/checkedgreen" />
+
+                    <TextView
+                        android:id="@+id/id_tv_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/id_tv_image"
+                        android:text="THE OXFORD"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <FrameLayout
+                        android:id="@+id/id_tv_border"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/id_tv_text"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="20dp"
+                        android:paddingTop="10dp">
+
+                        <View
+                            android:layout_width="250dp"
+                            android:layout_height="10dp"
+                            android:background="@drawable/borde1" />
+
+                    </FrameLayout>
+
+                    <ImageView
+                        android:id="@+id/id_tv_image1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/id_tv_border"
+                        android:layout_below="@+id/id_tv_border"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/staryellow"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/id_tv_image2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/id_tv_image1"
+                        android:layout_toRightOf="@id/id_tv_image1"
+                        android:src="@drawable/staryellow"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/id_tv_image3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/id_tv_image2"
+                        android:layout_toRightOf="@id/id_tv_image2"
+                        android:src="@drawable/staryellow"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/id_tv_image4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/id_tv_image3"
+                        android:layout_toRightOf="@id/id_tv_image3"
+                        android:src="@drawable/staryellow"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/id_tv_image5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/id_tv_image4"
+                        android:layout_toRightOf="@id/id_tv_image4"
+                        android:src="@drawable/staryellow"
+
+                        />
+
+
+                    <ImageView
+                        android:id="@+id/id_tv_image6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@id/id_tv_border"
+                        android:layout_below="@+id/id_tv_border"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/commentborder" />
+
+                    <ImageView
+                        android:id="@+id/id_tv_image7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/id_tv_image6"
+                        android:layout_marginRight="3dp"
+                        android:layout_toLeftOf="@id/id_tv_image6"
+                        android:src="@drawable/heartgreen" />
+
+                    <ImageView
+                        android:id="@+id/id_tv_image8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/id_tv_image7"
+                        android:layout_marginRight="3dp"
+                        android:layout_toLeftOf="@id/id_tv_image7"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/eyeborder" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/borde"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:elevation="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/postre2"
+                    app:civ_border_color="@color/colorWhite"
+                    app:civ_border_width="2dp" />
+
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <View
-                        android:layout_width="250dp"
-                        android:layout_height="10dp"
-                        android:background="@drawable/borde1"/>
-
-                </FrameLayout>
-
-                <ImageView
-                    android:id="@+id/id_tv_image1"
-                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/id_tv_border"
-                    android:layout_alignLeft="@id/id_tv_border"
-                    android:paddingTop="10dp"
-                    android:src="@drawable/staryellow"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1">
 
-                    />
-                <ImageView
-                    android:id="@+id/id_tv_image2"
-                    android:layout_width="wrap_content"
+
+                    <TextView
+                        android:id="@+id/id_tv_text1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="MADRAS CAFE"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <FrameLayout
+                        android:id="@+id/id_tv_border11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/id_tv_text1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="20dp"
+                        android:paddingTop="10dp">
+
+                        <View
+                            android:layout_width="250dp"
+                            android:layout_height="10dp"
+                            android:background="@drawable/borde1" />
+
+                        <View
+                            android:layout_width="100dp"
+                            android:layout_height="10dp"
+                            android:background="@drawable/borde2" />
+                    </FrameLayout>
+
+                    <ImageView
+                        android:id="@+id/id_tv_image10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/id_tv_border11"
+                        android:layout_below="@+id/id_tv_border11"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/staryellow"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/id_tv_image11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/id_tv_image10"
+                        android:layout_toRightOf="@id/id_tv_image10"
+                        android:src="@drawable/staryellow"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/id_tv_image12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/id_tv_image11"
+                        android:layout_toRightOf="@id/id_tv_image11"
+                        android:src="@drawable/staryellow"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/id_tv_image13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/id_tv_image12"
+                        android:layout_toRightOf="@id/id_tv_image12"
+                        android:src="@drawable/staryellow"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/id_tv_image14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/id_tv_image13"
+                        android:layout_toRightOf="@id/id_tv_image13"
+                        android:src="@drawable/staryellow"
+
+                        />
+
+
+                    <ImageView
+                        android:id="@+id/id_tv_image15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@id/id_tv_border11"
+                        android:layout_below="@+id/id_tv_border11"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/commentgreen" />
+
+                    <ImageView
+                        android:id="@+id/id_tv_image16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/id_tv_image15"
+                        android:layout_marginRight="3dp"
+                        android:layout_toLeftOf="@id/id_tv_image15"
+                        android:src="@drawable/heartborder" />
+
+                    <ImageView
+                        android:id="@+id/id_tv_image17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/id_tv_image16"
+                        android:layout_marginRight="3dp"
+                        android:layout_toLeftOf="@id/id_tv_image16"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/eyeborder" />
+
+                    <TextView
+                        android:id="@+id/id_tv_text2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@id/id_tv_text1"
+                        android:layout_alignTop="@+id/id_tv_text1"
+                        android:text="min"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/id_tv_text3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/id_tv_text2"
+                        android:layout_marginRight="8dp"
+                        android:layout_toLeftOf="@id/id_tv_text2"
+                        android:text="12"
+                        android:textColor="@color/colorGreen"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/borde"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:elevation="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/postre3"
+                    app:civ_border_color="@color/colorWhite"
+                    app:civ_border_width="2dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_toRightOf="@id/id_tv_image1"
-                    android:layout_alignBottom="@id/id_tv_image1"
-                    android:src="@drawable/staryellow"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1">
 
-                    />
-                <ImageView
-                    android:id="@+id/id_tv_image3"
-                    android:layout_width="wrap_content"
+
+                    <TextView
+                        android:id="@+id/id_tv_text4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="THE PHOENIX"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <FrameLayout
+                        android:id="@+id/id_tv_border22"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/id_tv_text4"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="20dp"
+                        android:paddingTop="10dp">
+
+                        <View
+                            android:layout_width="250dp"
+                            android:layout_height="10dp"
+                            android:background="@drawable/borde1" />
+
+                        <View
+                            android:layout_width="130dp"
+                            android:layout_height="10dp"
+                            android:background="@drawable/borde3" />
+
+                    </FrameLayout>
+
+                    <ImageView
+                        android:id="@+id/id_tv_image20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/id_tv_border22"
+                        android:layout_below="@+id/id_tv_border22"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/staryellow"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/id_tv_image21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/id_tv_image20"
+                        android:layout_toRightOf="@id/id_tv_image20"
+                        android:src="@drawable/staryellow"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/id_tv_image22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/id_tv_image21"
+                        android:layout_toRightOf="@id/id_tv_image21"
+                        android:src="@drawable/staryellow"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/id_tv_image23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/id_tv_image22"
+                        android:layout_toRightOf="@id/id_tv_image22"
+                        android:src="@drawable/staryellow"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/id_tv_image24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/id_tv_image23"
+                        android:layout_toRightOf="@id/id_tv_image23"
+                        android:src="@drawable/staryellow"
+
+                        />
+
+
+                    <ImageView
+                        android:id="@+id/id_tv_image25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@id/id_tv_border22"
+                        android:layout_below="@+id/id_tv_border22"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/commentborder" />
+
+                    <ImageView
+                        android:id="@+id/id_tv_image26"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/id_tv_image25"
+                        android:layout_marginRight="3dp"
+                        android:layout_toLeftOf="@id/id_tv_image25"
+                        android:src="@drawable/heartborder" />
+
+                    <ImageView
+                        android:id="@+id/id_tv_image27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/id_tv_image26"
+                        android:layout_marginRight="3dp"
+                        android:layout_toLeftOf="@id/id_tv_image26"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/eyeborder" />
+
+                    <TextView
+                        android:id="@+id/id_tv_text5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@id/id_tv_text4"
+                        android:layout_alignTop="@+id/id_tv_text4"
+                        android:text="min"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/id_tv_text6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/id_tv_text5"
+                        android:layout_marginRight="8dp"
+                        android:layout_toLeftOf="@id/id_tv_text5"
+                        android:text="20"
+                        android:textColor="@color/colorAccen"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/borde"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:elevation="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/postre4"
+                    app:civ_border_color="@color/colorWhite"
+                    app:civ_border_width="2dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_toRightOf="@id/id_tv_image2"
-                    android:layout_alignBottom="@id/id_tv_image2"
-                    android:src="@drawable/staryellow"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1">
 
-                    />
-                <ImageView
-                    android:id="@+id/id_tv_image4"
-                    android:layout_width="wrap_content"
+
+                    <TextView
+                        android:id="@+id/id_tv_text7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="EUREKA!"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <FrameLayout
+                        android:id="@+id/id_tv_border33"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/id_tv_text7"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="20dp"
+                        android:paddingTop="10dp">
+
+                        <View
+                            android:layout_width="250dp"
+                            android:layout_height="10dp"
+                            android:background="@drawable/borde1" />
+
+                        <View
+                            android:layout_width="160dp"
+                            android:layout_height="10dp"
+                            android:background="@drawable/borde4" />
+
+                    </FrameLayout>
+
+                    <ImageView
+                        android:id="@+id/id_tv_image28"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/id_tv_border33"
+                        android:layout_below="@+id/id_tv_border33"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/staryellow"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/id_tv_image29"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/id_tv_image28"
+                        android:layout_toRightOf="@id/id_tv_image28"
+                        android:src="@drawable/staryellow"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/id_tv_image30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/id_tv_image29"
+                        android:layout_toRightOf="@id/id_tv_image29"
+                        android:src="@drawable/staryellow"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/id_tv_image31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/id_tv_image30"
+                        android:layout_toRightOf="@id/id_tv_image30"
+                        android:src="@drawable/starborder"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/id_tv_image32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/id_tv_image31"
+                        android:layout_toRightOf="@id/id_tv_image31"
+                        android:src="@drawable/starborder"
+
+                        />
+
+
+                    <ImageView
+                        android:id="@+id/id_tv_image33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@id/id_tv_border33"
+                        android:layout_below="@+id/id_tv_border33"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/commentborder" />
+
+                    <ImageView
+                        android:id="@+id/id_tv_image34"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/id_tv_image33"
+                        android:layout_marginRight="3dp"
+                        android:layout_toLeftOf="@id/id_tv_image33"
+                        android:src="@drawable/heartgreen" />
+
+                    <ImageView
+                        android:id="@+id/id_tv_image35"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/id_tv_image34"
+                        android:layout_marginRight="3dp"
+                        android:layout_toLeftOf="@id/id_tv_image34"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/eyeborder" />
+
+                    <TextView
+                        android:id="@+id/id_tv_text8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@id/id_tv_text7"
+                        android:layout_alignTop="@+id/id_tv_text7"
+                        android:text="min"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/id_tv_text9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/id_tv_text8"
+                        android:layout_marginRight="8dp"
+                        android:layout_toLeftOf="@id/id_tv_text8"
+                        android:text="25"
+                        android:textColor="@color/colorOrange"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/borde"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:elevation="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/postre5"
+                    app:civ_border_color="@color/colorWhite"
+                    app:civ_border_width="2dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_toRightOf="@id/id_tv_image3"
-                    android:layout_alignBottom="@id/id_tv_image3"
-                    android:src="@drawable/staryellow"
-
-                    />
-
-                <ImageView
-                    android:id="@+id/id_tv_image5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_toRightOf="@id/id_tv_image4"
-                    android:layout_alignBottom="@id/id_tv_image4"
-                    android:src="@drawable/staryellow"
-
-                    />
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1">
 
 
-                <ImageView
-                    android:id="@+id/id_tv_image6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/id_tv_border"
-                    android:layout_alignRight="@id/id_tv_border"
-                    android:paddingTop="10dp"
-                    android:src="@drawable/staryellow"
-                    />
-                <ImageView
-                    android:id="@+id/id_tv_image7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_toLeftOf="@id/id_tv_image6"
-                    android:layout_alignBottom="@id/id_tv_image6"
-                    android:layout_marginRight="5dp"
-                    android:src="@drawable/staryellow"
-                    />
+                    <TextView
+                        android:id="@+id/id_tv_text10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="BAJIS CAFE"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
 
-                <ImageView
-                    android:id="@+id/id_tv_image8"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_toLeftOf="@id/id_tv_image7"
-                    android:layout_alignBottom="@id/id_tv_image7"
-                    android:paddingTop="10dp"
-                    android:layout_marginRight="5dp"
-                    android:src="@drawable/staryellow"
-                    />
+                    <FrameLayout
+                        android:id="@+id/id_tv_border44"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/id_tv_text10"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="20dp"
+                        android:paddingTop="10dp">
+
+                        <View
+                            android:layout_width="250dp"
+                            android:layout_height="10dp"
+                            android:background="@drawable/borde1" />
+
+                        <View
+                            android:layout_width="200dp"
+                            android:layout_height="10dp"
+                            android:background="@drawable/borde5" />
 
 
+                    </FrameLayout>
+
+                    <ImageView
+                        android:id="@+id/id_tv_image36"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/id_tv_border44"
+                        android:layout_below="@+id/id_tv_border44"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/staryellow"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/id_tv_image37"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/id_tv_image36"
+                        android:layout_toRightOf="@id/id_tv_image36"
+                        android:src="@drawable/staryellow"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/id_tv_image38"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/id_tv_image37"
+                        android:layout_toRightOf="@id/id_tv_image37"
+                        android:src="@drawable/starborder"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/id_tv_image39"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/id_tv_image38"
+                        android:layout_toRightOf="@id/id_tv_image38"
+                        android:src="@drawable/starborder"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/id_tv_image40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/id_tv_image39"
+                        android:layout_toRightOf="@id/id_tv_image39"
+                        android:src="@drawable/starborder"
+
+                        />
 
 
-            </RelativeLayout>
+                    <ImageView
+                        android:id="@+id/id_tv_image41"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@id/id_tv_border44"
+                        android:layout_below="@+id/id_tv_border44"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/commentborder" />
 
+                    <ImageView
+                        android:id="@+id/id_tv_image42"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/id_tv_image41"
+                        android:layout_marginRight="3dp"
+                        android:layout_toLeftOf="@id/id_tv_image41"
+                        android:src="@drawable/heartborder" />
+
+                    <ImageView
+                        android:id="@+id/id_tv_image43"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/id_tv_image42"
+                        android:layout_marginRight="3dp"
+                        android:layout_toLeftOf="@id/id_tv_image42"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/eyegreen" />
+
+                    <TextView
+                        android:id="@+id/id_tv_text11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@id/id_tv_text10"
+                        android:layout_alignTop="@+id/id_tv_text10"
+                        android:text="min"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/id_tv_text12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/id_tv_text11"
+                        android:layout_marginRight="8dp"
+                        android:layout_toLeftOf="@id/id_tv_text11"
+                        android:text="45"
+                        android:textColor="@color/colorRed"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
         </LinearLayout>
 
-    </LinearLayout>
 
+    </ScrollView>
 
-
-</ScrollView>
-<android.support.design.widget.FloatingActionButton
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_gravity="bottom|end"
-    android:src="@drawable/plus"
-    />
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:src="@drawable/plus" />
 </android.support.design.widget.CoordinatorLayout>
